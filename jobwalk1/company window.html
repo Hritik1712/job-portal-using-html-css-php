@@ -1,0 +1,80 @@
+<!doctype>
+<html>
+<head>
+	<title>company window</title>
+	<style>
+   body{
+    background-color: #993366;
+  }
+.active {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.active span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.active span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.active:hover span {
+  padding-right: 25px;
+}
+
+.active:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<li><a href="tested.php" class="active">add jobs</a></li>
+<br>
+<br>
+<br>
+<br>
+<br>
+<li><a href="company viewappliedjob.php" class="active">view applied jobs</a></li>
+<br>
+<br>
+<br>
+<br>
+<br>
+<li><a href="company deletejob.php" class="active">manage jobs</a></li>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
